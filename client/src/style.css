@@ -1,0 +1,1249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#responsive{
+  background-color: rgb(248 179 12);
+  height: 12vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: math;
+}
+
+#home {
+  overflow: hidden;
+  width: 100%;
+}
+
+#left {
+  margin-left: 36px;
+}
+
+#form {
+  height: 72vh;
+}
+
+.p-6 {
+  padding: 0.5rem;
+}
+
+header {
+  background-color: rgb(248 179 12);
+  height: 12vh;
+}
+
+header h1 {
+  font-weight: 900;
+
+}
+
+center span {
+  position: relative;
+  bottom: 45px;
+
+}
+
+.underline {
+  width: 12%;
+}
+
+header a b {
+  background-color: #07989b;
+  color: white;
+}
+
+#home {
+  /* background-image: url(taxi_service_02.jpg); */
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#booknowbtn:hover {
+  /* background-color: rgb(11 125 130); */
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+}
+
+.borderr {
+  width: 10%;
+  /* height: 40px; */
+}
+
+.bookbtn {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.info img {
+  width: 20px;
+}
+
+
+/* cars */
+#cars {
+  /* border: 1px solid rgb(8, 8, 8); */
+  box-shadow: 1px 0px 1px 4px rgba(194, 191, 191, 0.457);
+}
+
+#carhead {
+  background-color: rgb(248 179 12);
+}
+
+
+#carhead button {
+  /* background-color:rgb(248 179 12); border-image: url(./borderline.png)30 fill / 30px / 30px space;; */
+  padding: 10px;
+  color: white;
+}
+
+#carhead button:focus {
+  background-color: #282828;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.submitbtn {
+  background-color: rgb(0, 0, 0);
+  padding: 8px;
+  width: 100px;
+  color: white;
+  border-radius: 10%;
+}
+
+.submitbtn:focus {
+  background-color: #00bfc2;
+  padding: 8px;
+  color: rgb(255, 255, 255);
+}
+
+.carbox {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+.features {
+  display: flex;
+  /* margin: 10px; */
+}
+
+.features img {
+  margin-left: 16px;
+}
+
+.features span {
+  margin-left: 6px;
+}
+
+.carbox .cartab {
+  width: 600px;
+  margin-top: 6vh;
+  /* height: 300px; */
+}
+
+.carbox .cartab .amaze {
+  width: 100%;
+  /* height: 280px; */
+  /* height: 300px; */
+}
+
+
+.info h1 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.info {
+  z-index: 10;
+  margin-left: 100px;
+  width: 40%;
+  margin-top: 100px;
+}
+
+.info p {
+  font-family: math;
+}
+
+.formimg {
+  position: absolute;
+  right: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    overflow-x: hidden;
+  }
+
+  #left {
+    margin-left: 0px !important;
+  }
+
+  .carbox {
+    display: block;
+  }
+
+  .info {
+    z-index: 10;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .carbox img {
+    width: 70%;
+  }
+
+  .info img {
+    width: 20px;
+  }
+
+  .underline {
+    width: 43%;
+    height: 1vh;
+  }
+
+  /* form */
+  #form {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    /* padding-top: 50px; */
+  }
+
+  .w-screen {
+    width: 48vh;
+  }
+
+  #home {
+    height: 160vh;
+  }
+  #services{
+    overflow-y:visible !important;
+    height: 356vh !important;
+  }
+
+  .serve {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    margin: 0px !important;
+  }
+
+  .servbox {
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    height: 60vh;
+    width: 90% !important;
+  }
+
+  .grid-50-50 {
+    display: block;
+    /* grid-template-columns:1fr; */
+  }
+}
+
+.cartab {
+  position: relative;
+  /* background-color: red; */
+  animation-name: animate;
+  width: 100%;
+  animation-duration: 4s;
+}
+
+@keyframes animate {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 100px;
+  }
+
+  100% {
+    left: 100px;
+  }
+}
+
+/* reviews */
+/* #reviews{
+
+} */
+
+#aboutb {
+  background-attachment: fixed;
+}
+
+/* tabs */
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+/* footer */
+#bgfooter h1 {
+  font-weight: 800;
+  font-size: 30px;
+  color: white;
+
+}
+
+#bgfooter h2 {
+  font-weight: bold;
+  color: white;
+
+}
+
+.car-movement {
+  overflow-y: hidden;
+  font-size: 40px;
+  height: 50px;
+  background-color: #000000;
+}
+
+.car-movement>.car {
+  position: relative;
+  display: inline-block;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 15s;
+}
+
+@keyframes run {
+  0% {
+    transform: rotateY(180deg);
+    left: -100px;
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    left: 100%;
+  }
+
+  51% {
+    transform: rotateY(0deg);
+    left: calc(100% + 100px);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+    left: -100px;
+  }
+}
+
+.r {
+  color: rgb(249, 191, 0);
+}
+
+#bgfooter {
+  background-color: rgb(248 179 12);
+  color: white;
+  width: 100%;
+  border-image: url(http://localhost:3000/static/media/border.832e7813b460bbc8b974.jpg)22 fill / 26px;
+
+}
+
+/* aboutpage */
+.aboutpage {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  gap: 32px;
+  justify-content: center;
+}
+
+.box1 {
+  height: 60vh;
+  width: 45%;
+}
+
+.box1 img {
+  height: 60vh;
+  width: 100%;
+}
+
+.box2 h1 {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.box2 {
+  background-color: rgb(236, 236, 236);
+  height: 60vh;
+  width: 40%;
+  padding: 30px;
+}
+
+.box2 {
+  font-size: 13px;
+}
+
+.h1 {
+  font-weight: 900;
+  font-size: 30px;
+  padding: 40px;
+}
+
+/* services */
+#services {
+  display: block;
+  width: 100%;
+  height: 135vh;
+  overflow-y: hidden;
+  background-attachment: fixed;
+  background-image: url(servicebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.flip-box-front h2{
+  margin-top: 14px;
+  color: transparent;
+}
+
+.serve {
+  display: flex;
+  width: 95%;
+  margin: 30px;
+  gap: 30px;
+
+}
+
+/* 
+.servbox:hover {
+  background-color: #dde3e3;
+  box-shadow: 1px 1px 5px 6px rgba(0, 0, 0, 0.199);
+}
+
+
+
+.servbox {
+  height: 65vh;
+  width: 32%;
+  padding: 6%;
+  margin: auto;
+  background-color: rgb(255 255 255);
+  box-shadow: 1px 1px 5px 6px rgba(223, 222, 222, 0.345);
+
+}
+
+/* flipbox */
+.flip-box {
+  background-color: transparent;
+  height: 50vh;
+  width: 30%;
+  margin: auto;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: rgb(250, 187, 0);
+  color: white;
+  transform: rotateX(180deg);
+}
+
+#services img {
+  width: 50px;
+}
+
+#services h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  margin-top: 102px;
+}
+
+#services h1 {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+
+#services p {
+  font-size: 14px;
+}
+
+
+/* brands */
+#brands {
+  /* background-color: rgba(255, 255, 255, 0.888); */
+  /* border: 1px solid grey; */
+  margin-top: 50px;
+  /* box-shadow: 2px 3px 4px grey; */
+}
+
+#brands img {
+  transform: scale(1.8);
+
+}
+
+#brands img:hover {
+  transform: scale(1.5);
+
+}
+
+
+
+
+
+
+/* poster */
+#poster {
+  height: 44vh;
+  width: 100%;
+}
+
+.one,
+.two {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.p1 {
+  height: 360px;
+  width: 46%;
+}
+
+.p2 {
+  width: 54%;
+  height: 360px;
+}
+
+.p3 {
+  height: 68vh;
+  width: 86%;
+}
+
+.p4 {
+  width: 54%;
+  height: 360px;
+}
+
+/* contact */
+.footerr_get_touch_outer {
+  padding: 50px 0;
+  background: #f5f5f5;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footerr_get_touch_inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.get_say_social-icn a {
+  font-size: 22px;
+  color: #fff;
+  padding: 0 20px 0 0;
+}
+
+.get_say_info_sec i {
+  color: #fff;
+  font-size: 32px;
+}
+
+.get_form,
+.get_say_form {
+  flex: 1;
+}
+
+.get_form_inner {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.get_form_inner_text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.form-group .msg {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  color: #333;
+  padding: 12px 0 0 20px;
+  width: 100%;
+  outline: 0;
+  resize: none;
+  height: 18vh;
+  /* margin-bottom: 20px; */
+}
+
+.grid-full {
+  text-align: center;
+}
+
+.submitbtn {
+  background: rgb(248 179 12);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submitbtn:hover {
+  background: rgb(248 179 12);
+}
+
+.get_say_form {
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  /* padding: 45px 0 25px 30px; */
+  background: black;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.get_say_info_sec {
+  list-style: none;
+  padding: 0;
+}
+
+.get_say_info_sec>li a {
+  width: 100%;
+  display: block;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: unset;
+  font-weight: 500;
+  background: rgb(248 179 12);
+  border-radius: 5px 0 0 5px;
+  transition: background 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -webkit-transition: background 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -moz-transition: background 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -ms-transition: background 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -o-transition: background 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.get_say_info_sec li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.get_say_info_sec li i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.get_say_social-icn {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.get_say_social-icn li {
+  margin: 0 5px;
+}
+
+.get_say_social-icn li a {
+  font-size: 1.5em;
+  color: #f5e8e8;
+  transition: color 0.3s;
+}
+
+.get_say_social-icn li a:hover {
+  color: rgb(248 179 12);
+}
+
+.map {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footerr_get_touch_inner {
+    flex-direction: column;
+  }
+
+  .get_form_inner {
+    background: #fff;
+    padding: 12px;
+  }
+
+  .get_form,
+  .get_say_form {
+    flex: none;
+    width: 100%;
+  }
+
+  .h1 .m-2 {
+    font-size: small;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .carbox {
+    height: 88vh;
+  }
+
+  .flip-box {
+    width: 88%;
+  }
+}
+
+
+
+/* Gallery */
+.gallery {
+  background-color: rgba(12, 12, 12, 0.872);
+  padding: 10px;
+  max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /* margin-bottom: 1000px; */
+
+}
+
+.gallery header {
+  width: 100%;
+  height: 200px;
+  color: rgba(225, 225, 225, 0.632);
+  text-align: center;
+}
+
+.t1 {
+  font-size: 32px;
+}
+
+
+.gallery div {
+  margin: 3px;
+  float: left;
+  width: 28.5%;
+  height: 400px;
+  transition: 0.5s;
+}
+
+.text {
+  position: absolute;
+  font-size: 40px;
+  z-index: -10;
+  top: 82%;
+  left: 1%;
+  color: rgb(0, 0, 0);
+  letter-spacing: 10px;
+  transition: 0.5s;
+}
+
+.text1 {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 0;
+  left: 81.5%;
+  top: 80%;
+  transform: rotate(90deg);
+  color: rgb(255, 255, 255);
+  letter-spacing: 8px;
+  transition: 0.5s;
+}
+
+.photography {
+  z-index: -1;
+  position: relative;
+  top: calc(50% - 5%);
+  font-size: 30px;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: 3px;
+  bottom: 3px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.d1 {
+  background-image: url("https://www.team-bhp.com/carpics/2020-maruti-vitara-brezza/m/exterior/maruti-vitara-brezza-petrol-19.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.d2 {
+  background-image: url("https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/140809/innova-crysta-interior-front-row-seats.jpeg?isig=0&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.d3 {
+  background-image: url("https://www.teahub.io/photos/full/268-2684367_suzuki-swift-car-photo-swift-car.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 40.6%;
+  height: 806px;
+}
+
+.d4 {
+  background-image: url("https://imgd-ct.aeplcdn.com/1056x660/cw/ec/24731/Toyota-Platinum-Etios-Interior-101753.jpg?v=201711021421&wm=1&q=80");
+  background-size: cover;
+  background-position: center;
+  width: 57.6%;
+  transition: 0.5s;
+}
+
+.d5 {
+  width: 40.5%;
+  background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/Amaze/10519/1689589132736/taillight-44.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.d6 {
+  background-image: url("https://assets.tractorjunction.com/truck-junction/assets/images/truck/traveller-3350-wider-body-1691490510.jpg");
+  background-size: cover;
+  z-index: 2;
+  background-position: center;
+}
+
+.d7 {
+  width: 40.6%;
+  background-image: url("https://i.ytimg.com/vi/3pSctT-k70A/sddefault.jpg?v=63812c3a");
+  background-size: cover;
+  background-position: center;
+}
+
+.d8 {
+  background-image: url("https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/101021/honda-amaze-right-front-three-quarter14.jpeg?isig=0&wm=0&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.d1:hover {
+  width: 30%;
+  height: 806px;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.d1:hover~.d3 {
+  width: 38%;
+  height: 400px;
+}
+
+.d2:hover {
+  width: 38%;
+  height: 410px;
+
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.d2:hover~.d3 {
+  width: 30%;
+  height: 400px;
+}
+
+.d3:hover {
+  height: 700px;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.d3:hover~.text {
+  top: 550px;
+}
+
+.d4:hover {
+  height: 806px;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.layer:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.layer:hover .photography {
+  z-index: 1;
+}
+
+.d6:hover {
+  width: 40.5%;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.d6:hover+.d7 {
+  width: 28.5%;
+}
+
+.d7:hover {
+  width: 45%;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.d7:hover+.d8 {
+  width: 24.1%;
+}
+
+.d8:hover {
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery div {
+    width: 100%;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .text1 {
+    display: none;
+  }
+
+  .one {
+    display: block;
+    width: 100%;
+  }
+
+  .one img {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .aboutpage {
+    display: block;
+  }
+
+  .box1 {
+    width: 100%;
+  }
+
+  .box2 {
+    width: 100%;
+    height: 80vh;
+  }
+
+  #poster {
+    height: 40vh;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .linkk {
+    position: relative;
+    right: 32px;
+  }
+
+  #bgfooter h2 {
+    font-size: 20px;
+    color: rgba(10, 10, 10, 0.607);
+  }
+
+  #bgfooter a {
+    font-size: 16px;
+  }
+
+  .cartab {
+    position: relative;
+    /* background-color: red; */
+    animation-name: animate2;
+    width: 100%;
+    animation-duration: 4s;
+  }
+
+  @keyframes animate2 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    50% {
+      left: 10px;
+    }
+
+    100% {
+      left: 20px;
+    }
+  }
+}
+
+.linkk {
+  margin-left: 2rem;
+}
+
+.fill-current {
+  fill: currentColor;
+  margin-left: 10px;
+}
+
+
+
+
+
+/* login */
+/* register */
+/* Registerbox */
+
+
+#login{
+  height: 88vh;
+  width:100%;
+  background-image:url(bglogin.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-register {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+.registerbox input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.screen {
+  text-align: center;
+}
+
+.registerbox #btn {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  width: 127px;
+}
+
+/* select{
+  height: 5vh;
+  width: 20vh;
+} */
+/* register */
+/* Registerbox */
+.container-register {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 32%;
+  height: 47vh;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+.registerbox input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.screen {
+  text-align: center;
+}
+/* select{
+  height: 5vh;
+  width: 20vh;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* dashboard */
+.cabmap {
+  width: 100%;
+}
+
+.avataricon {
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+/* Our rates */
+#rates h1{
+  font-weight: 900;
+  font-size: 40px;
+}
+#rates h2{
+  font-weight: 800;
+  font-size: 28px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: left;
+  padding: 8px;
+  /* color: rgb(146, 146, 146); */
+}
+
+tr:nth-child(even) {
+  color:rgb(0, 0, 0);
+}
+tr:nth-child(odd){
+  background-color: rgb(241, 198, 57);
+  color: rgb(0, 0, 0);
+}
+th{
+  background-color: black;
+  color: white;
+}

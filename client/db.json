@@ -1,0 +1,39 @@
+{
+  "Passengers": [
+    {
+      "name": "abc",
+      "mobile": "abc@gmail.com",
+      "location": "Mp nagar",
+      "destination": "Awadhpuri",
+      "id": "ba9c"
+    }
+  ],
+  "Contact": [
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "message": "need to rent a car",
+      "id": "6517"
+    },
+    {
+      "id": "52a1",
+      "name": "RITIKA PHILIP",
+      "email": "ritikaphilip2000@gmail.com",
+      "msg": "Need car for 2 days"
+    },
+    {
+      "id": "1bca",
+      "name": "RITIKA PHILIP",
+      "email": "ritikaphilip2000@gmail.com",
+      "msg": "ersuhesn"
+    }
+  ],
+  "admin":[
+    {
+      "name":"Raghuveer",
+      "email":"singhsonu21887@gmail.com",
+      "password":"qwerty"
+    }
+  ]
+  
+}
